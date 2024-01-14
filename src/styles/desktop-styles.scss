@@ -2,12 +2,11 @@
 
 @media (min-width: 992px) {
   header {
-    .buttons {
-      display: block;
-    }
+    flex-wrap: nowrap;
 
-    .navigation {
-      display: none;
+    .menu {
+      order: unset;
+      width: max-content;
     }
   }
 }

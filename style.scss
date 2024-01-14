@@ -2,6 +2,7 @@
 @use "./src/styles/variables" as v;
 
 @use "./src/styles/phone-styles.scss";
+@use "./src/styles/tablet-styles.scss";
 @use "./src/styles/desktop-styles.scss";
 
 :root {
@@ -19,6 +20,7 @@ body {
 
 a {
   color: black;
+  text-decoration: none;
 }
 
 main {
@@ -27,5 +29,5 @@ main {
 }
 
 .hidden {
-  display: none;
+  display: none !important;
 }
