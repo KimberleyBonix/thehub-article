@@ -1,0 +1,18 @@
+@use "./src/styles/variables" as v;
+
+header {
+  display: flex;
+  justify-content: space-between;
+  height: v.$header-height;
+
+  .buttons {
+    display: none;
+  }
+}
+
+.sidenav {
+  position: absolute;
+  top: v.$sidebar-offset;
+  width: 100%;
+  background-color: grey;
+}

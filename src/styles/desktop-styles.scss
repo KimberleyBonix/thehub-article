@@ -1,0 +1,13 @@
+@use "./src/styles/variables" as v;
+
+@media (min-width: 992px) {
+  header {
+    .buttons {
+      display: block;
+    }
+
+    .navigation {
+      display: none;
+    }
+  }
+}
