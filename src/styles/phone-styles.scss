@@ -1,5 +1,6 @@
 @use "./src/styles/variables" as v;
 
+/** HEADER **/
 header {
   position: relative;
   z-index: 999;
@@ -55,4 +56,80 @@ header {
     text-align: center;
     gap: 1rem;
   }
+}
+
+/** ARTICLE **/
+
+.headline {
+  margin-bottom: 2rem;
+  &__text {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  &__cover {
+    &--img {
+      border-radius: 10px;
+    }
+
+    &--description {
+      font-size: 0.8rem;
+      line-height: 1rem;
+    }
+  }
+}
+
+/* NEWSLETTER */
+.newsletter__form {
+  display: flex;
+
+  &--input {
+    width: 100%;
+  }
+}
+
+/* OTHER ARTICLE */
+
+.thumbnail {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 2rem;
+
+  &__cover {
+    width: 100%;
+    max-height: 10rem;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+  }
+}
+
+/* FOOTER */
+.footer {
+  padding: 0 2rem;
+
+  &__socials {
+    align-self: start;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+
+  &__links {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-bottom: 1rem;
 }

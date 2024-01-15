@@ -63,28 +63,32 @@
     <!-- MAIN -->
     <main>
       <!-- PAGE HEADER -->
-      <section class="page-header">
-        <a href="" class="category">Category</a>
+      <section class="headline">
+        <div class="headline__text">
+          <a href="" class="category">Category</a>
 
-        <h1>Article title</h1>
+          <h1>Article title</h1>
 
-        <div class="details">
-          <a href="" class="author">Author</a>
-          <span class="date">and date</span>
+          <div class="details">
+            <a href="" class="author">Author</a>
+            <span class="date">and date</span>
+          </div>
         </div>
-      </section>
 
-      <!-- IMAGE ARTICLE -->
-      <figure>
-        <img
-          src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          alt="Article image"
-        />
-        <figcaption>
-          <b>Image description</b>
-          <span class="credits">Image credits</span>
-        </figcaption>
-      </figure>
+        <!-- IMAGE ARTICLE -->
+        <figure class="headline__cover">
+          <img
+            src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            alt="Article image"
+            class="headline__cover--img"
+          />
+          <figcaption class="headline__cover--description">
+            <b>Image description</b>
+            <br />
+            <span class="credits">Image credits</span>
+          </figcaption>
+        </figure>
+      </section>
 
       <!-- PAGE CONTENT -->
       <section class="page-content">
@@ -131,9 +135,16 @@
           <!-- NEWSLETTER -->
           <div class="newsletter">
             <h2>Newsletter</h2>
-            <form action="/subscribe">
-              <input type="mail" name="mail" placeholder="Votre adresse mail" />
-              <button type="submit">Subscribe</button>
+            <form action="/subscribe" class="newsletter__form">
+              <input
+                type="mail"
+                name="mail"
+                placeholder="Votre adresse mail"
+                class="newsletter__form--input"
+              />
+              <button type="submit" class="newsletter__form--button">
+                Subscribe
+              </button>
             </form>
           </div>
 
@@ -141,40 +152,69 @@
           <div class="latest">
             <h2>Latest</h2>
 
-            <article class="article">
-              <img
-                src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Article image"
-              />
-              <div class="article__infos">
-                <a href="">Article title</a>
-                <div class="details">
-                  <a href="" class="author">Author</a>
-                  <span class="date">and date</span>
+            <div class="thumbnails">
+              <article class="thumbnail">
+                <img
+                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Article image"
+                  class="thumbnail__cover"
+                />
+                <div class="thumbnail__content">
+                  <a href="">Article title</a>
+                  <div class="details">
+                    <a href="" class="author">Author</a>
+                    <span class="date">and date</span>
+                  </div>
                 </div>
-              </div>
-            </article>
-
-            <article class="article">
-              <img
-                src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                alt="Article image"
-              />
-              <div class="article__infos">
-                <a href="">Article title</a>
-                <div class="details">
-                  <a href="" class="author">Author</a>
-                  <span class="date">and date</span>
+              </article>
+              <article class="thumbnail">
+                <img
+                  src="https://images.unsplash.com/photo-1573164713988-8665fc963095?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                  alt="Article image"
+                  class="thumbnail__cover"
+                />
+                <div class="thumbnail__content">
+                  <a href="">Article title</a>
+                  <div class="details">
+                    <a href="" class="author">Author</a>
+                    <span class="date">and date</span>
+                  </div>
                 </div>
-              </div>
-            </article>
+              </article>
+            </div>
           </div>
         </aside>
       </section>
     </main>
 
     <!-- FOOTER -->
-    <footer></footer>
+    <footer class="footer">
+      <div class="footer__socials">
+        <h2>Follow us</h2>
+
+        <div class="buttons">
+          <a href="/instagram"><i class="bi bi-instagram"></i></a>
+          <a href="/twitter"><i class="bi bi-twitter"></i></a>
+          <a href="/facebook"><i class="bi bi-facebook"></i></a>
+        </div>
+      </div>
+
+      <div class="footer__links">
+        <div class="links">
+          <a href="">About us</a>
+          <a href="">Contact</a>
+          <a href="">Help</a>
+          <a href="">Career</a>
+        </div>
+
+        <div class="links">
+          <a href="">Privacy policy</a>
+          <a href="">Site map</a>
+          <a href="">Commissioning terms</a>
+          <a href="">Terms and conditions</a>
+        </div>
+      </div>
+    </footer>
 
     <script type="module" src="/main.js"></script>
   </body>
