@@ -7,6 +7,7 @@
     .menu {
       order: unset;
       width: max-content;
+      border: unset;
     }
   }
 
@@ -14,5 +15,17 @@
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 2rem;
+  }
+
+  .thumbnail {
+    margin: 0;
+
+    &:nth-child(odd) {
+      margin: 0 -1rem 0 -1rem;
+    }
+
+    &:nth-child(even) {
+      margin: 1px -1rem -1rem -1rem;
+    }
   }
 }
